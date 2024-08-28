@@ -1,0 +1,89 @@
+stages:
+  - style
+  - build
+  - test
+  - deploy
+
+.notify: &notify
+  - |
+      if [ "$CI_JOB_STATUS" == "success" ]; then
+        STATUS="УСПЕШНО"
+      else
+        STATUS="НЕУСПЕШНО"
+      fi
+      MESSAGE=$(cat <<-EOF
+      Проект: $CI_PROJECT_NAME
+      Автор коммита: $GITLAB_USER_NAME
+      Этап: $CI_JOB_STAGE
+      Статус: $STATUS
+      Коммит: $CI_COMMIT_TITLE
+      EOF
+      )
+      curl -s -X POST https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage \
+      -d chat_id=${TELEGRAM_CHAT_ID} \
+      -d text="$MESSAGE" \
+      || echo "Failed to send Telegram notification"
+
+style-job:
+   stage: style
+   tags:
+     - style
+   script:
+     - cd src/
+     - make clang
+     - make cpp
+
+   after_script:
+     - *notify
+   only:
+     - develop
+ 
+build-job:
+   stage: build
+   tags:
+     - build
+   script:
+     - cd src/
+     - make s21_matrix.a
+   after_script:
+     - *notify
+   artifacts:
+     paths:
+       - src/s21_matrix.a
+     expire_in: 30 days
+   only:
+     - develop
+
+test-job:
+   stage: test
+   tags:
+     - test
+   script:
+     - cd src/
+     - make test > test.txt 2> test_err.txt || true
+     - cat test.txt
+     - cat test_err.txt
+     - |
+       if ! grep -q "Failures: 0" test.txt || ! grep -q "Errors: 0" test.txt; then
+         echo "Test failed."
+         exit 1
+       fi
+   after_script:
+     - *notify
+   only:
+     - develop
+
+deploy-job:
+   stage: deploy
+   tags:
+     - deploy
+   when: manual
+   script:
+    #  - mkdir -p /home/gitlab-runner/.ssh
+    #  - ssh-keyscan -H 192.10.10.4 >> /home/gitlab-runner/.ssh/known_hosts
+     - chmod 777 src/run.sh
+     - sh src/run.sh
+   after_script:
+     - *notify
+   only:
+     - develop

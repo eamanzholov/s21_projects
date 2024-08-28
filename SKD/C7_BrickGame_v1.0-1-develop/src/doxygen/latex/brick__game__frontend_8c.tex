@@ -1,0 +1,178 @@
+\hypertarget{brick__game__frontend_8c}{}\doxysection{gui/cli/brick\+\_\+game\+\_\+frontend.c File Reference}
+\label{brick__game__frontend_8c}\index{gui/cli/brick\_game\_frontend.c@{gui/cli/brick\_game\_frontend.c}}
+{\ttfamily \#include \char`\"{}brick\+\_\+game\+\_\+frontend.\+h\char`\"{}}\newline
+Include dependency graph for brick\+\_\+game\+\_\+frontend.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{brick__game__frontend_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9}{User\+Action\+\_\+t}} \mbox{\hyperlink{brick__game__frontend_8c_a2f404de77b4bedf92f43317a49b249aa}{get\+\_\+signal}} (int user\+\_\+input)
+\begin{DoxyCompactList}\small\item\em Перевод сигнала в код User\+Action\+\_\+t. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{brick__game__frontend_8c_abf15e4551fd729806881dbb91dcee2b7}{print\+\_\+overlay}} (void)
+\begin{DoxyCompactList}\small\item\em Рисует основной интерфейс для игры \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{brick__game__frontend_8c_acca38b7824c06ba18f7705910eecda2a}{print\+\_\+rectangle}} (int top\+\_\+y, int bottom\+\_\+y, int left\+\_\+x, int right\+\_\+x)
+\begin{DoxyCompactList}\small\item\em Рисует прямоугольник по заданным координатам \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{brick__game__frontend_8c_ad301d68708c8fe6b9099df674b0a8966}{print\+\_\+stats}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$stats)
+\begin{DoxyCompactList}\small\item\em Выводит статы в правом блоке интерфейса \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{brick__game__frontend_8c_a831738585ba22c3fd61f5804b5146033}{print\+\_\+board}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Выводит статы в правом блоке интерфейса \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{brick__game__frontend_8c_a58ed45879091b3337bdf4df739733cd6}{print\+\_\+banner}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$stats)
+\begin{DoxyCompactList}\small\item\em Выводит баннер поражения \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{brick__game__frontend_8c_aed65512cd0b40d447d53478661092bd0}{print\+\_\+next\+\_\+section}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$stats)
+\begin{DoxyCompactList}\small\item\em Рисует фигуру в блоке следующей фигуры тетриса \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{brick__game__frontend_8c_af68b2a201e5c56292fe02147fd982d12}{print\+\_\+pause}} ()
+\begin{DoxyCompactList}\small\item\em Выводит надпись Игра остановлена \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} \mbox{\hyperlink{brick__game__frontend_8c_afd5762991a9248a0b4192983fd786a8f}{update\+Current\+State}} ()
+\begin{DoxyCompactList}\small\item\em Основная функция отрисовки всего интерфеса \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$ \mbox{\hyperlink{brick__game__frontend_8c_abde472ffa0573f7e1f94b879be68267e}{change\+\_\+\+Game\+Info\+\_\+t}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Получаем или задаём в статическую переменную структуру \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{brick__game__frontend_8c_abde472ffa0573f7e1f94b879be68267e}\label{brick__game__frontend_8c_abde472ffa0573f7e1f94b879be68267e}} 
+\index{brick\_game\_frontend.c@{brick\_game\_frontend.c}!change\_GameInfo\_t@{change\_GameInfo\_t}}
+\index{change\_GameInfo\_t@{change\_GameInfo\_t}!brick\_game\_frontend.c@{brick\_game\_frontend.c}}
+\doxysubsubsection{\texorpdfstring{change\_GameInfo\_t()}{change\_GameInfo\_t()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}}$\ast$ change\+\_\+\+Game\+Info\+\_\+t (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Получаем или задаём в статическую переменную структуру \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Info} & Структура \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{brick__game__frontend_8c_a2f404de77b4bedf92f43317a49b249aa}\label{brick__game__frontend_8c_a2f404de77b4bedf92f43317a49b249aa}} 
+\index{brick\_game\_frontend.c@{brick\_game\_frontend.c}!get\_signal@{get\_signal}}
+\index{get\_signal@{get\_signal}!brick\_game\_frontend.c@{brick\_game\_frontend.c}}
+\doxysubsubsection{\texorpdfstring{get\_signal()}{get\_signal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9}{User\+Action\+\_\+t}} get\+\_\+signal (\begin{DoxyParamCaption}\item[{int}]{user\+\_\+input }\end{DoxyParamCaption})}
+
+
+
+Перевод сигнала в код User\+Action\+\_\+t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+\_\+input} & код сигнала нажатия кнопки \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{brick__game__frontend_8c_a58ed45879091b3337bdf4df739733cd6}\label{brick__game__frontend_8c_a58ed45879091b3337bdf4df739733cd6}} 
+\index{brick\_game\_frontend.c@{brick\_game\_frontend.c}!print\_banner@{print\_banner}}
+\index{print\_banner@{print\_banner}!brick\_game\_frontend.c@{brick\_game\_frontend.c}}
+\doxysubsubsection{\texorpdfstring{print\_banner()}{print\_banner()}}
+{\footnotesize\ttfamily void print\+\_\+banner (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{stats }\end{DoxyParamCaption})}
+
+
+
+Выводит баннер поражения 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stats} & Структура с статами для вывода конечных статов \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{brick__game__frontend_8c_a831738585ba22c3fd61f5804b5146033}\label{brick__game__frontend_8c_a831738585ba22c3fd61f5804b5146033}} 
+\index{brick\_game\_frontend.c@{brick\_game\_frontend.c}!print\_board@{print\_board}}
+\index{print\_board@{print\_board}!brick\_game\_frontend.c@{brick\_game\_frontend.c}}
+\doxysubsubsection{\texorpdfstring{print\_board()}{print\_board()}}
+{\footnotesize\ttfamily void print\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Выводит статы в правом блоке интерфейса 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stats} & Структура с статами \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{brick__game__frontend_8c_aed65512cd0b40d447d53478661092bd0}\label{brick__game__frontend_8c_aed65512cd0b40d447d53478661092bd0}} 
+\index{brick\_game\_frontend.c@{brick\_game\_frontend.c}!print\_next\_section@{print\_next\_section}}
+\index{print\_next\_section@{print\_next\_section}!brick\_game\_frontend.c@{brick\_game\_frontend.c}}
+\doxysubsubsection{\texorpdfstring{print\_next\_section()}{print\_next\_section()}}
+{\footnotesize\ttfamily void print\+\_\+next\+\_\+section (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{stats }\end{DoxyParamCaption})}
+
+
+
+Рисует фигуру в блоке следующей фигуры тетриса 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stats} & Структура с матрицей, содержащей следующую фигуру \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{brick__game__frontend_8c_abf15e4551fd729806881dbb91dcee2b7}\label{brick__game__frontend_8c_abf15e4551fd729806881dbb91dcee2b7}} 
+\index{brick\_game\_frontend.c@{brick\_game\_frontend.c}!print\_overlay@{print\_overlay}}
+\index{print\_overlay@{print\_overlay}!brick\_game\_frontend.c@{brick\_game\_frontend.c}}
+\doxysubsubsection{\texorpdfstring{print\_overlay()}{print\_overlay()}}
+{\footnotesize\ttfamily void print\+\_\+overlay (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Рисует основной интерфейс для игры 
+
+\mbox{\Hypertarget{brick__game__frontend_8c_af68b2a201e5c56292fe02147fd982d12}\label{brick__game__frontend_8c_af68b2a201e5c56292fe02147fd982d12}} 
+\index{brick\_game\_frontend.c@{brick\_game\_frontend.c}!print\_pause@{print\_pause}}
+\index{print\_pause@{print\_pause}!brick\_game\_frontend.c@{brick\_game\_frontend.c}}
+\doxysubsubsection{\texorpdfstring{print\_pause()}{print\_pause()}}
+{\footnotesize\ttfamily void print\+\_\+pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Выводит надпись Игра остановлена 
+
+\mbox{\Hypertarget{brick__game__frontend_8c_acca38b7824c06ba18f7705910eecda2a}\label{brick__game__frontend_8c_acca38b7824c06ba18f7705910eecda2a}} 
+\index{brick\_game\_frontend.c@{brick\_game\_frontend.c}!print\_rectangle@{print\_rectangle}}
+\index{print\_rectangle@{print\_rectangle}!brick\_game\_frontend.c@{brick\_game\_frontend.c}}
+\doxysubsubsection{\texorpdfstring{print\_rectangle()}{print\_rectangle()}}
+{\footnotesize\ttfamily void print\+\_\+rectangle (\begin{DoxyParamCaption}\item[{int}]{top\+\_\+y,  }\item[{int}]{bottom\+\_\+y,  }\item[{int}]{left\+\_\+x,  }\item[{int}]{right\+\_\+x }\end{DoxyParamCaption})}
+
+
+
+Рисует прямоугольник по заданным координатам 
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+\_\+y} & Верхняя граница прямоугольника \\
+\hline
+{\em bottom\+\_\+y} & Нижняя граница прямоугольника \\
+\hline
+{\em left\+\_\+x} & Левая граница прямоугольника \\
+\hline
+{\em right\+\_\+x} & Правая граница прямоугольника \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{brick__game__frontend_8c_ad301d68708c8fe6b9099df674b0a8966}\label{brick__game__frontend_8c_ad301d68708c8fe6b9099df674b0a8966}} 
+\index{brick\_game\_frontend.c@{brick\_game\_frontend.c}!print\_stats@{print\_stats}}
+\index{print\_stats@{print\_stats}!brick\_game\_frontend.c@{brick\_game\_frontend.c}}
+\doxysubsubsection{\texorpdfstring{print\_stats()}{print\_stats()}}
+{\footnotesize\ttfamily void print\+\_\+stats (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{stats }\end{DoxyParamCaption})}
+
+
+
+Выводит статы в правом блоке интерфейса 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stats} & Структура с статами \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{brick__game__frontend_8c_afd5762991a9248a0b4192983fd786a8f}\label{brick__game__frontend_8c_afd5762991a9248a0b4192983fd786a8f}} 
+\index{brick\_game\_frontend.c@{brick\_game\_frontend.c}!updateCurrentState@{updateCurrentState}}
+\index{updateCurrentState@{updateCurrentState}!brick\_game\_frontend.c@{brick\_game\_frontend.c}}
+\doxysubsubsection{\texorpdfstring{updateCurrentState()}{updateCurrentState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} update\+Current\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Основная функция отрисовки всего интерфеса 
+

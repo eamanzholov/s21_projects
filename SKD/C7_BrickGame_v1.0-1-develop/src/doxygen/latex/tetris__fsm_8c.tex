@@ -1,0 +1,586 @@
+\hypertarget{tetris__fsm_8c}{}\doxysection{brick\+\_\+game/tetris/tetris\+\_\+fsm.c File Reference}
+\label{tetris__fsm_8c}\index{brick\_game/tetris/tetris\_fsm.c@{brick\_game/tetris/tetris\_fsm.c}}
+{\ttfamily \#include \char`\"{}tetris\+\_\+fsm.\+h\char`\"{}}\newline
+Include dependency graph for tetris\+\_\+fsm.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{tetris__fsm_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tetris__fsm_8c_aa1ef2fe21dac144253e279363d67b044}{clear\+\_\+backpos}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Очистка поля от старого положения фигуры \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tetris__fsm_8c_a08c0e69fce9578630c210855c004065d}{movedown}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Проверка на возможность движения фигуры вниз. Движение фигуры вниз \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_a361f63ef2c0dadb7ccb1ecdb8b73c464}{moveright}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Проверка на возможность движения фигуры вправо. Движение фигуры вправо \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_a8fb0596d3eedd16c62ab0cc162390909}{moveleft}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Проверка на возможность движения фигуры влево. Движение фигуры влево \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_a860c12a7bd9dfccecd9e243baab02b47}{rotate\+\_\+I}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Расчёт поворота для фигуры I. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tetris__fsm_8c_aabd279c606fbf774aefba2d4fa6647bd}{rotate\+\_\+\+J\+\_\+first}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Расчёт поворота для фигуры J. Первые две формы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_adbceb3942ffcf68b9bb534abecad1912}{rotate\+\_\+\+J\+\_\+second}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Расчёт поворота для фигуры J. Вторые две формы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_a49c8ec7c49e50dd43170f2565bbf0a02}{rotate\+\_\+J}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Расчёт поворота для фигуры J. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tetris__fsm_8c_afd30ae91f9fc8de93fd0c661a11462a5}{rotate\+\_\+\+L\+\_\+first}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Расчёт поворота для фигуры L. Первые две формы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_a8b549f36634a314fdbb8418adc9f69b9}{rotate\+\_\+\+L\+\_\+second}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Расчёт поворота для фигуры L. Вторые две формы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_abebc3b8a334622bae1b3f08d4b534541}{rotate\+\_\+L}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Расчёт поворота для фигуры L. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_a05fb873738e0644c8d848e295da30a5b}{rotate\+\_\+S}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Расчёт поворота для фигуры S. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tetris__fsm_8c_a8f1944212cc4fe3e1051aa454aecccb6}{rotate\+\_\+\+T\+\_\+first}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Расчёт поворота для фигуры T. Первые две формы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_a85d16d7f9b13c5d428ee3eb3513f462e}{rotate\+\_\+\+T\+\_\+second}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Расчёт поворота для фигуры T. Вторые две формы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_a42f302039241af9634400c334b98c39a}{rotate\+\_\+T}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Расчёт поворота для фигуры T. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_aeac458abb8a18f2afe155553ed890e6a}{rotate\+\_\+Z}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Расчёт поворота для фигуры Z. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tetris__fsm_8c_ad08ce509cc2debdee3c97a725e910aa3}{rotate}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Функция определяющая поворот фигуры согласно её типу \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_a01726c684fe8a524514701b97ba472ff}{movedown\+\_\+clock\+\_\+check}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info, \mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{tetris__fsm_8h_aa50950bf52c1e68360f8f490c20e9c0f}{tetris\+\_\+state}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em Проверка на возможность движения фигуры вниз. Движение фигуры вниз после определенного таймера \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_a72bd44eb178534aab0f61bbfafecfb31}{spawn\+\_\+state}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info, \mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}{block}} $\ast$next\+Block, \mbox{\hyperlink{tetris__fsm_8h_aa50950bf52c1e68360f8f490c20e9c0f}{tetris\+\_\+state}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em Состояние спавна новой фигуры и проверки можно ли заспавнить новую фигуру \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_a472a9a4ce0b5f798f3a33db461f3c02e}{move\+\_\+state}} (\mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9}{User\+Action\+\_\+t}} $\ast$sig, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info, \mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{tetris__fsm_8h_aa50950bf52c1e68360f8f490c20e9c0f}{tetris\+\_\+state}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em Состояние движения фигуры, принимает на вход сигнал нажатия для определения направления движеия фигуры \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_abe1347d3bfbf1eef80cdbf100760cfee}{pause\+\_\+state}} (\mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9}{User\+Action\+\_\+t}} $\ast$sig, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info, \mbox{\hyperlink{tetris__fsm_8h_aa50950bf52c1e68360f8f490c20e9c0f}{tetris\+\_\+state}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em Состояние паузы. Проверка на нажатие паузы или выхода из игры \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$ \mbox{\hyperlink{tetris__fsm_8c_a607fca59a1d3c7439225a0fd673d934c}{get\+\_\+game\+Info}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Установка или получение переменной с использованием локальной статической переменной \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tetris__fsm_8h_aa50950bf52c1e68360f8f490c20e9c0f}{tetris\+\_\+state}} $\ast$ \mbox{\hyperlink{tetris__fsm_8c_a8bc7d49e61cafe0aa8bbbd53162f51fb}{get\+\_\+state}} (\mbox{\hyperlink{tetris__fsm_8h_aa50950bf52c1e68360f8f490c20e9c0f}{tetris\+\_\+state}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em Установка или получение переменной с использованием локальной статической переменной \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$ \mbox{\hyperlink{tetris__fsm_8c_a1ed9cc714d7a1aeb77144341f0993c3c}{get\+\_\+current}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current)
+\begin{DoxyCompactList}\small\item\em Установка или получение переменной с использованием локальной статической переменной \end{DoxyCompactList}\item 
+\mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}{block}} $\ast$ \mbox{\hyperlink{tetris__fsm_8c_afc3ca68bda15fd71a84460967b3328e0}{get\+\_\+next\+Block}} (\mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}{block}} $\ast$next\+Block)
+\begin{DoxyCompactList}\small\item\em Установка или получение переменной с использованием локальной статической переменной \end{DoxyCompactList}\item 
+bool $\ast$ \mbox{\hyperlink{tetris__fsm_8c_a5a58f2994e13578de96718774f058e7f}{get\+\_\+fall\+Time}} (bool $\ast$fall\+Time)
+\begin{DoxyCompactList}\small\item\em Установка или получение переменной с использованием локальной статической переменной \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_ab961f91e569a34b6984536633126257a}{user\+Input}} (\mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9}{User\+Action\+\_\+t}} action, bool hold)
+\begin{DoxyCompactList}\small\item\em Функция из спецификации. Вводим только код сигнала. Идет обработка всех нужных переменных на статической уровне и происходит игровой шаг \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__fsm_8c_a32419da04f6769b2721f96d9621250e9}{sigact}} (\mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9}{User\+Action\+\_\+t}} $\ast$sig, const bool $\ast$fall\+Time, \mbox{\hyperlink{tetris__fsm_8h_aa50950bf52c1e68360f8f490c20e9c0f}{tetris\+\_\+state}} $\ast$state, \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info, \mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current, \mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}{block}} $\ast$next\+Block)
+\begin{DoxyCompactList}\small\item\em Сам конечный автомат состояний и переключений между состояниями \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tetris__fsm_8c_aa1ef2fe21dac144253e279363d67b044}\label{tetris__fsm_8c_aa1ef2fe21dac144253e279363d67b044}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!clear\_backpos@{clear\_backpos}}
+\index{clear\_backpos@{clear\_backpos}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{clear\_backpos()}{clear\_backpos()}}
+{\footnotesize\ttfamily void clear\+\_\+backpos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Очистка поля от старого положения фигуры 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты текущей фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_a1ed9cc714d7a1aeb77144341f0993c3c}\label{tetris__fsm_8c_a1ed9cc714d7a1aeb77144341f0993c3c}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!get\_current@{get\_current}}
+\index{get\_current@{get\_current}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{get\_current()}{get\_current()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structTetramino}{Tetramino}}$\ast$ get\+\_\+current (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current }\end{DoxyParamCaption})}
+
+
+
+Установка или получение переменной с использованием локальной статической переменной 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Рабочая перменная \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает ссылку на соответсвующую переменную 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tetris__fsm_8c_a5a58f2994e13578de96718774f058e7f}\label{tetris__fsm_8c_a5a58f2994e13578de96718774f058e7f}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!get\_fallTime@{get\_fallTime}}
+\index{get\_fallTime@{get\_fallTime}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{get\_fallTime()}{get\_fallTime()}}
+{\footnotesize\ttfamily bool$\ast$ get\+\_\+fall\+Time (\begin{DoxyParamCaption}\item[{bool $\ast$}]{fall\+Time }\end{DoxyParamCaption})}
+
+
+
+Установка или получение переменной с использованием локальной статической переменной 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fall\+Time} & Рабочая перменная \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает ссылку на соответсвующую переменную 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tetris__fsm_8c_a607fca59a1d3c7439225a0fd673d934c}\label{tetris__fsm_8c_a607fca59a1d3c7439225a0fd673d934c}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!get\_gameInfo@{get\_gameInfo}}
+\index{get\_gameInfo@{get\_gameInfo}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{get\_gameInfo()}{get\_gameInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}}$\ast$ get\+\_\+game\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Установка или получение переменной с использованием локальной статической переменной 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Info} & Рабочая структура \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает ссылку на соответсвующую структуру 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tetris__fsm_8c_afc3ca68bda15fd71a84460967b3328e0}\label{tetris__fsm_8c_afc3ca68bda15fd71a84460967b3328e0}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!get\_nextBlock@{get\_nextBlock}}
+\index{get\_nextBlock@{get\_nextBlock}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{get\_nextBlock()}{get\_nextBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}{block}}$\ast$ get\+\_\+next\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}{block}} $\ast$}]{next\+Block }\end{DoxyParamCaption})}
+
+
+
+Установка или получение переменной с использованием локальной статической переменной 
+
+
+\begin{DoxyParams}{Parameters}
+{\em next\+Block} & Рабочая перменная \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает ссылку на соответсвующую переменную 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tetris__fsm_8c_a8bc7d49e61cafe0aa8bbbd53162f51fb}\label{tetris__fsm_8c_a8bc7d49e61cafe0aa8bbbd53162f51fb}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!get\_state@{get\_state}}
+\index{get\_state@{get\_state}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{get\_state()}{get\_state()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tetris__fsm_8h_aa50950bf52c1e68360f8f490c20e9c0f}{tetris\+\_\+state}}$\ast$ get\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tetris__fsm_8h_aa50950bf52c1e68360f8f490c20e9c0f}{tetris\+\_\+state}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+Установка или получение переменной с использованием локальной статической переменной 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & Рабочая перменная \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает ссылку на соответсвующую переменную 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tetris__fsm_8c_a472a9a4ce0b5f798f3a33db461f3c02e}\label{tetris__fsm_8c_a472a9a4ce0b5f798f3a33db461f3c02e}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!move\_state@{move\_state}}
+\index{move\_state@{move\_state}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{move\_state()}{move\_state()}}
+{\footnotesize\ttfamily void move\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9}{User\+Action\+\_\+t}} $\ast$}]{sig,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info,  }\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{tetris__fsm_8h_aa50950bf52c1e68360f8f490c20e9c0f}{tetris\+\_\+state}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+Состояние движения фигуры, принимает на вход сигнал нажатия для определения направления движеия фигуры 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sig} & Сигнал нажатия \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+{\em current} & Координаты фигуры \\
+\hline
+{\em state} & Стостояние машины \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_a08c0e69fce9578630c210855c004065d}\label{tetris__fsm_8c_a08c0e69fce9578630c210855c004065d}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!movedown@{movedown}}
+\index{movedown@{movedown}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{movedown()}{movedown()}}
+{\footnotesize\ttfamily int movedown (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Проверка на возможность движения фигуры вниз. Движение фигуры вниз 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты текущей фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Упала ли фигура на что-\/то твёрдое 1 иначе 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tetris__fsm_8c_a01726c684fe8a524514701b97ba472ff}\label{tetris__fsm_8c_a01726c684fe8a524514701b97ba472ff}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!movedown\_clock\_check@{movedown\_clock\_check}}
+\index{movedown\_clock\_check@{movedown\_clock\_check}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{movedown\_clock\_check()}{movedown\_clock\_check()}}
+{\footnotesize\ttfamily void movedown\+\_\+clock\+\_\+check (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info,  }\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{tetris__fsm_8h_aa50950bf52c1e68360f8f490c20e9c0f}{tetris\+\_\+state}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+Проверка на возможность движения фигуры вниз. Движение фигуры вниз после определенного таймера 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты текущей фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+{\em state} & Текущее стостояние машины \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_a8fb0596d3eedd16c62ab0cc162390909}\label{tetris__fsm_8c_a8fb0596d3eedd16c62ab0cc162390909}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!moveleft@{moveleft}}
+\index{moveleft@{moveleft}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{moveleft()}{moveleft()}}
+{\footnotesize\ttfamily void moveleft (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Проверка на возможность движения фигуры влево. Движение фигуры влево 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты текущей фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_a361f63ef2c0dadb7ccb1ecdb8b73c464}\label{tetris__fsm_8c_a361f63ef2c0dadb7ccb1ecdb8b73c464}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!moveright@{moveright}}
+\index{moveright@{moveright}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{moveright()}{moveright()}}
+{\footnotesize\ttfamily void moveright (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Проверка на возможность движения фигуры вправо. Движение фигуры вправо 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты текущей фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_abe1347d3bfbf1eef80cdbf100760cfee}\label{tetris__fsm_8c_abe1347d3bfbf1eef80cdbf100760cfee}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!pause\_state@{pause\_state}}
+\index{pause\_state@{pause\_state}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{pause\_state()}{pause\_state()}}
+{\footnotesize\ttfamily void pause\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9}{User\+Action\+\_\+t}} $\ast$}]{sig,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info,  }\item[{\mbox{\hyperlink{tetris__fsm_8h_aa50950bf52c1e68360f8f490c20e9c0f}{tetris\+\_\+state}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+Состояние паузы. Проверка на нажатие паузы или выхода из игры 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sig} & Сигнал нажатия \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+{\em state} & Стостояние машины \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_ad08ce509cc2debdee3c97a725e910aa3}\label{tetris__fsm_8c_ad08ce509cc2debdee3c97a725e910aa3}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!rotate@{rotate}}
+\index{rotate@{rotate}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily int rotate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Функция определяющая поворот фигуры согласно её типу 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Тип фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_a860c12a7bd9dfccecd9e243baab02b47}\label{tetris__fsm_8c_a860c12a7bd9dfccecd9e243baab02b47}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!rotate\_I@{rotate\_I}}
+\index{rotate\_I@{rotate\_I}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{rotate\_I()}{rotate\_I()}}
+{\footnotesize\ttfamily void rotate\+\_\+I (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Расчёт поворота для фигуры I. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_a49c8ec7c49e50dd43170f2565bbf0a02}\label{tetris__fsm_8c_a49c8ec7c49e50dd43170f2565bbf0a02}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!rotate\_J@{rotate\_J}}
+\index{rotate\_J@{rotate\_J}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{rotate\_J()}{rotate\_J()}}
+{\footnotesize\ttfamily void rotate\+\_\+J (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Расчёт поворота для фигуры J. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_aabd279c606fbf774aefba2d4fa6647bd}\label{tetris__fsm_8c_aabd279c606fbf774aefba2d4fa6647bd}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!rotate\_J\_first@{rotate\_J\_first}}
+\index{rotate\_J\_first@{rotate\_J\_first}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{rotate\_J\_first()}{rotate\_J\_first()}}
+{\footnotesize\ttfamily int rotate\+\_\+\+J\+\_\+first (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Расчёт поворота для фигуры J. Первые две формы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Был ли произведен поворот из второго положения в третье 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tetris__fsm_8c_adbceb3942ffcf68b9bb534abecad1912}\label{tetris__fsm_8c_adbceb3942ffcf68b9bb534abecad1912}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!rotate\_J\_second@{rotate\_J\_second}}
+\index{rotate\_J\_second@{rotate\_J\_second}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{rotate\_J\_second()}{rotate\_J\_second()}}
+{\footnotesize\ttfamily void rotate\+\_\+\+J\+\_\+second (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Расчёт поворота для фигуры J. Вторые две формы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_abebc3b8a334622bae1b3f08d4b534541}\label{tetris__fsm_8c_abebc3b8a334622bae1b3f08d4b534541}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!rotate\_L@{rotate\_L}}
+\index{rotate\_L@{rotate\_L}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{rotate\_L()}{rotate\_L()}}
+{\footnotesize\ttfamily void rotate\+\_\+L (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Расчёт поворота для фигуры L. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_afd30ae91f9fc8de93fd0c661a11462a5}\label{tetris__fsm_8c_afd30ae91f9fc8de93fd0c661a11462a5}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!rotate\_L\_first@{rotate\_L\_first}}
+\index{rotate\_L\_first@{rotate\_L\_first}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{rotate\_L\_first()}{rotate\_L\_first()}}
+{\footnotesize\ttfamily int rotate\+\_\+\+L\+\_\+first (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Расчёт поворота для фигуры L. Первые две формы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Был ли произведен поворот из второго положения в третье 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tetris__fsm_8c_a8b549f36634a314fdbb8418adc9f69b9}\label{tetris__fsm_8c_a8b549f36634a314fdbb8418adc9f69b9}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!rotate\_L\_second@{rotate\_L\_second}}
+\index{rotate\_L\_second@{rotate\_L\_second}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{rotate\_L\_second()}{rotate\_L\_second()}}
+{\footnotesize\ttfamily void rotate\+\_\+\+L\+\_\+second (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Расчёт поворота для фигуры L. Вторые две формы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_a05fb873738e0644c8d848e295da30a5b}\label{tetris__fsm_8c_a05fb873738e0644c8d848e295da30a5b}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!rotate\_S@{rotate\_S}}
+\index{rotate\_S@{rotate\_S}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{rotate\_S()}{rotate\_S()}}
+{\footnotesize\ttfamily void rotate\+\_\+S (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Расчёт поворота для фигуры S. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_a42f302039241af9634400c334b98c39a}\label{tetris__fsm_8c_a42f302039241af9634400c334b98c39a}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!rotate\_T@{rotate\_T}}
+\index{rotate\_T@{rotate\_T}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{rotate\_T()}{rotate\_T()}}
+{\footnotesize\ttfamily void rotate\+\_\+T (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Расчёт поворота для фигуры T. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_a8f1944212cc4fe3e1051aa454aecccb6}\label{tetris__fsm_8c_a8f1944212cc4fe3e1051aa454aecccb6}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!rotate\_T\_first@{rotate\_T\_first}}
+\index{rotate\_T\_first@{rotate\_T\_first}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{rotate\_T\_first()}{rotate\_T\_first()}}
+{\footnotesize\ttfamily int rotate\+\_\+\+T\+\_\+first (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Расчёт поворота для фигуры T. Первые две формы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Был ли произведен поворот из второго положения в третье 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tetris__fsm_8c_a85d16d7f9b13c5d428ee3eb3513f462e}\label{tetris__fsm_8c_a85d16d7f9b13c5d428ee3eb3513f462e}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!rotate\_T\_second@{rotate\_T\_second}}
+\index{rotate\_T\_second@{rotate\_T\_second}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{rotate\_T\_second()}{rotate\_T\_second()}}
+{\footnotesize\ttfamily void rotate\+\_\+\+T\+\_\+second (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Расчёт поворота для фигуры T. Вторые две формы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_aeac458abb8a18f2afe155553ed890e6a}\label{tetris__fsm_8c_aeac458abb8a18f2afe155553ed890e6a}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!rotate\_Z@{rotate\_Z}}
+\index{rotate\_Z@{rotate\_Z}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{rotate\_Z()}{rotate\_Z()}}
+{\footnotesize\ttfamily void rotate\+\_\+Z (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Расчёт поворота для фигуры Z. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Координаты фигуры \\
+\hline
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_a32419da04f6769b2721f96d9621250e9}\label{tetris__fsm_8c_a32419da04f6769b2721f96d9621250e9}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!sigact@{sigact}}
+\index{sigact@{sigact}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{sigact()}{sigact()}}
+{\footnotesize\ttfamily void sigact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9}{User\+Action\+\_\+t}} $\ast$}]{sig,  }\item[{const bool $\ast$}]{fall\+Time,  }\item[{\mbox{\hyperlink{tetris__fsm_8h_aa50950bf52c1e68360f8f490c20e9c0f}{tetris\+\_\+state}} $\ast$}]{state,  }\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info,  }\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}{block}} $\ast$}]{next\+Block }\end{DoxyParamCaption})}
+
+
+
+Сам конечный автомат состояний и переключений между состояниями 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sig} & Поступивший сигнал \\
+\hline
+{\em fall\+Time} & Время ли сейчас сдвигать фигуру вниз \\
+\hline
+{\em state} & Текущее состояние машины \\
+\hline
+{\em game\+Info} & Главная структура с полем \\
+\hline
+{\em current} & Текущие координаты фигуры \\
+\hline
+{\em next\+Block} & Следующая фигура \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_a72bd44eb178534aab0f61bbfafecfb31}\label{tetris__fsm_8c_a72bd44eb178534aab0f61bbfafecfb31}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!spawn\_state@{spawn\_state}}
+\index{spawn\_state@{spawn\_state}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{spawn\_state()}{spawn\_state()}}
+{\footnotesize\ttfamily void spawn\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info,  }\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current,  }\item[{\mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}{block}} $\ast$}]{next\+Block,  }\item[{\mbox{\hyperlink{tetris__fsm_8h_aa50950bf52c1e68360f8f490c20e9c0f}{tetris\+\_\+state}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+Состояние спавна новой фигуры и проверки можно ли заспавнить новую фигуру 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Info} & Структура с игровым полем \\
+\hline
+{\em current} & Координаты фигуры \\
+\hline
+{\em next\+Block} & Следующая фигура \\
+\hline
+{\em state} & Стостояние машины \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__fsm_8c_ab961f91e569a34b6984536633126257a}\label{tetris__fsm_8c_ab961f91e569a34b6984536633126257a}} 
+\index{tetris\_fsm.c@{tetris\_fsm.c}!userInput@{userInput}}
+\index{userInput@{userInput}!tetris\_fsm.c@{tetris\_fsm.c}}
+\doxysubsubsection{\texorpdfstring{userInput()}{userInput()}}
+{\footnotesize\ttfamily void user\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9}{User\+Action\+\_\+t}}}]{action,  }\item[{bool}]{hold }\end{DoxyParamCaption})}
+
+
+
+Функция из спецификации. Вводим только код сигнала. Идет обработка всех нужных переменных на статической уровне и происходит игровой шаг 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Код нажатой кнопки в нужном формате \\
+\hline
+{\em hold} & Заглушка, понадобится в следующих играх \\
+\hline
+\end{DoxyParams}

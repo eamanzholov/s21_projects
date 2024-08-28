@@ -1,0 +1,9 @@
+1 cd door_management_files 
+2 cd door_configuration 
+3 nano door_1.conf
+4 STATUS: OPEN
+5 ^O
+6 ^X
+7 git add .
+8 git commit -m"Forth commit!"
+9 git push origin develop

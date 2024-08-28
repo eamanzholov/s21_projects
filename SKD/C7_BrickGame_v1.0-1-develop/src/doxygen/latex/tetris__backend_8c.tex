@@ -1,0 +1,402 @@
+\hypertarget{tetris__backend_8c}{}\doxysection{brick\+\_\+game/tetris/tetris\+\_\+backend.c File Reference}
+\label{tetris__backend_8c}\index{brick\_game/tetris/tetris\_backend.c@{brick\_game/tetris/tetris\_backend.c}}
+{\ttfamily \#include \char`\"{}tetris\+\_\+backend.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for tetris\+\_\+backend.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{tetris__backend_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tetris__backend_8c_a486721ed296747d63c376cc37e84485d}{info\+Init}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Инициализация основных переменных игры \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_aa7317e42bfe60fb32ccfdd3de1876849}{info\+Free}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info)
+\begin{DoxyCompactList}\small\item\em Освобождение памяти под главной структурой \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_a60a94c566974419a1ed87218446df8a8}{tetramino\+\_\+init\+\_\+I}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current)
+\begin{DoxyCompactList}\small\item\em Инициализация координат фигуры I. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_ad5dbb48546f46c461fe9ce5829a9c08d}{tetramino\+\_\+init\+\_\+J}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current)
+\begin{DoxyCompactList}\small\item\em Инициализация координат фигуры J. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_a565b3886dedb43d436187aaf5263551b}{tetramino\+\_\+init\+\_\+L}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current)
+\begin{DoxyCompactList}\small\item\em Инициализация координат фигуры L. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_a62589297de9962365d77c00862ad94be}{tetramino\+\_\+init\+\_\+O}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current)
+\begin{DoxyCompactList}\small\item\em Инициализация координат фигуры O. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_a27e5e475d0c6194f2753d17e5d366e68}{tetramino\+\_\+init\+\_\+S}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current)
+\begin{DoxyCompactList}\small\item\em Инициализация координат фигуры S. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_a99593737bfb8ebe9064b00157cffe4fc}{tetramino\+\_\+init\+\_\+T}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current)
+\begin{DoxyCompactList}\small\item\em Инициализация координат фигуры T. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_af1631c762c0245ada4bb117123ee4be8}{tetramino\+\_\+init\+\_\+Z}} (\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current)
+\begin{DoxyCompactList}\small\item\em Инициализация координат фигуры Z. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tetris__backend_8c_a33d84b8e62cb5a09fc076c0db7d06d60}{board\+\_\+update}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$board, \mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current)
+\begin{DoxyCompactList}\small\item\em Запись в основную матрицу игрового поля блоков с координат переменной \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_a199519666c5f4a8cc8e0779b3ef7214a}{next\+\_\+update}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$board, \mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}{block}} next\+Block)
+\begin{DoxyCompactList}\small\item\em Инициализация \char`\"{}Следующей фигуры\char`\"{} для последующего отображения в окне справа \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_a51971e3f2b2258c5edb752e3a1dcf710}{next\+\_\+init\+\_\+I}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Инициализация \char`\"{}Следующей фигуры I\char`\"{} для последующего отображения в окне справа \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_a48cca112f1a28970e01260a726e4ee1b}{next\+\_\+init\+\_\+J}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Инициализация \char`\"{}Следующей фигуры J\char`\"{} для последующего отображения в окне справа \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_adaa559435c3ae9565a373e41bb3adb98}{next\+\_\+init\+\_\+L}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Инициализация \char`\"{}Следующей фигуры L\char`\"{} для последующего отображения в окне справа \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_a5b3310642c70a40752e343a8fc33a7c7}{next\+\_\+init\+\_\+O}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Инициализация \char`\"{}Следующей фигуры O\char`\"{} для последующего отображения в окне справа \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_aad736068f09a698f533c844e233671d0}{next\+\_\+init\+\_\+S}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Инициализация \char`\"{}Следующей фигуры S\char`\"{} для последующего отображения в окне справа \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_a82bb30341bfa641bad1c2bd68c1428ae}{next\+\_\+init\+\_\+T}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Инициализация \char`\"{}Следующей фигуры T\char`\"{} для последующего отображения в окне справа \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_a08244559d472cebf011626cd0e343cc2}{next\+\_\+init\+\_\+Z}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Инициализация \char`\"{}Следующей фигуры Z\char`\"{} для последующего отображения в окне справа \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tetris__backend_8c_a0f61e90bcf0578ee32cd304adae68885}{spawn\+\_\+block}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info, \mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}{block}} block\+\_\+type, \mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current)
+\begin{DoxyCompactList}\small\item\em Проверка на возможность спавна новой фигуры и её спавн \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tetris__backend_8c_a5c48c0c337163ee9b7f801a7cfad1d69}{is\+\_\+not\+\_\+spawnable}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info, \mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$current)
+\begin{DoxyCompactList}\small\item\em Проверка, можно ли заспавнить на текущих координатах фигуру \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetris__backend_8c_abbaf0b26016cf3996e4807dec15e199d}{lines\+\_\+to\+\_\+score}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$game\+Info, int lines)
+\begin{DoxyCompactList}\small\item\em Перевод количества собранных линий в очки и запись их \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tetris__backend_8c_a9855e590da9541507e8889066a7a3ffb}{check\+\_\+full\+\_\+line}} (\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Проверка заполненности целой линии и перенос блоков на один в низ в случае успеха \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tetris__backend_8c_a33d84b8e62cb5a09fc076c0db7d06d60}\label{tetris__backend_8c_a33d84b8e62cb5a09fc076c0db7d06d60}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!board\_update@{board\_update}}
+\index{board\_update@{board\_update}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{board\_update()}{board\_update()}}
+{\footnotesize\ttfamily int board\+\_\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{board,  }\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current }\end{DoxyParamCaption})}
+
+
+
+Запись в основную матрицу игрового поля блоков с координат переменной 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & Структура в которую ставим блоки для обновления поля \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_a9855e590da9541507e8889066a7a3ffb}\label{tetris__backend_8c_a9855e590da9541507e8889066a7a3ffb}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!check\_full\_line@{check\_full\_line}}
+\index{check\_full\_line@{check\_full\_line}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{check\_full\_line()}{check\_full\_line()}}
+{\footnotesize\ttfamily int check\+\_\+full\+\_\+line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Проверка заполненности целой линии и перенос блоков на один в низ в случае успеха 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & Структура с матрицей через которую проверяем матрицу блоков \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_aa7317e42bfe60fb32ccfdd3de1876849}\label{tetris__backend_8c_aa7317e42bfe60fb32ccfdd3de1876849}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!infoFree@{infoFree}}
+\index{infoFree@{infoFree}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{infoFree()}{infoFree()}}
+{\footnotesize\ttfamily void info\+Free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Освобождение памяти под главной структурой 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Info} & Указатель на структуру \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_a486721ed296747d63c376cc37e84485d}\label{tetris__backend_8c_a486721ed296747d63c376cc37e84485d}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!infoInit@{infoInit}}
+\index{infoInit@{infoInit}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{infoInit()}{infoInit()}}
+{\footnotesize\ttfamily void info\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info }\end{DoxyParamCaption})}
+
+
+
+Инициализация основных переменных игры 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Info} & Указатель на структуру \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_a5c48c0c337163ee9b7f801a7cfad1d69}\label{tetris__backend_8c_a5c48c0c337163ee9b7f801a7cfad1d69}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!is\_not\_spawnable@{is\_not\_spawnable}}
+\index{is\_not\_spawnable@{is\_not\_spawnable}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{is\_not\_spawnable()}{is\_not\_spawnable()}}
+{\footnotesize\ttfamily int is\+\_\+not\+\_\+spawnable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info,  }\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current }\end{DoxyParamCaption})}
+
+
+
+Проверка, можно ли заспавнить на текущих координатах фигуру 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Info} & Указатель на структуру \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} \\
+\hline
+{\em current} & Координаты которые будем проверять \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_abbaf0b26016cf3996e4807dec15e199d}\label{tetris__backend_8c_abbaf0b26016cf3996e4807dec15e199d}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!lines\_to\_score@{lines\_to\_score}}
+\index{lines\_to\_score@{lines\_to\_score}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{lines\_to\_score()}{lines\_to\_score()}}
+{\footnotesize\ttfamily void lines\+\_\+to\+\_\+score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info,  }\item[{int}]{lines }\end{DoxyParamCaption})}
+
+
+
+Перевод количества собранных линий в очки и запись их 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & Структура в которую записываем очки \\
+\hline
+{\em lines} & Количество собранных линий \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_a51971e3f2b2258c5edb752e3a1dcf710}\label{tetris__backend_8c_a51971e3f2b2258c5edb752e3a1dcf710}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!next\_init\_I@{next\_init\_I}}
+\index{next\_init\_I@{next\_init\_I}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{next\_init\_I()}{next\_init\_I()}}
+{\footnotesize\ttfamily void next\+\_\+init\+\_\+I (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Инициализация \char`\"{}Следующей фигуры I\char`\"{} для последующего отображения в окне справа 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & Структура с матрицей в которую записываем фигуру \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_a48cca112f1a28970e01260a726e4ee1b}\label{tetris__backend_8c_a48cca112f1a28970e01260a726e4ee1b}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!next\_init\_J@{next\_init\_J}}
+\index{next\_init\_J@{next\_init\_J}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{next\_init\_J()}{next\_init\_J()}}
+{\footnotesize\ttfamily void next\+\_\+init\+\_\+J (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Инициализация \char`\"{}Следующей фигуры J\char`\"{} для последующего отображения в окне справа 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & Структура с матрицей в которую записываем фигуру \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_adaa559435c3ae9565a373e41bb3adb98}\label{tetris__backend_8c_adaa559435c3ae9565a373e41bb3adb98}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!next\_init\_L@{next\_init\_L}}
+\index{next\_init\_L@{next\_init\_L}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{next\_init\_L()}{next\_init\_L()}}
+{\footnotesize\ttfamily void next\+\_\+init\+\_\+L (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Инициализация \char`\"{}Следующей фигуры L\char`\"{} для последующего отображения в окне справа 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & Структура с матрицей в которую записываем фигуру \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_a5b3310642c70a40752e343a8fc33a7c7}\label{tetris__backend_8c_a5b3310642c70a40752e343a8fc33a7c7}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!next\_init\_O@{next\_init\_O}}
+\index{next\_init\_O@{next\_init\_O}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{next\_init\_O()}{next\_init\_O()}}
+{\footnotesize\ttfamily void next\+\_\+init\+\_\+O (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Инициализация \char`\"{}Следующей фигуры O\char`\"{} для последующего отображения в окне справа 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & Структура с матрицей в которую записываем фигуру \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_aad736068f09a698f533c844e233671d0}\label{tetris__backend_8c_aad736068f09a698f533c844e233671d0}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!next\_init\_S@{next\_init\_S}}
+\index{next\_init\_S@{next\_init\_S}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{next\_init\_S()}{next\_init\_S()}}
+{\footnotesize\ttfamily void next\+\_\+init\+\_\+S (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Инициализация \char`\"{}Следующей фигуры S\char`\"{} для последующего отображения в окне справа 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & Структура с матрицей в которую записываем фигуру \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_a82bb30341bfa641bad1c2bd68c1428ae}\label{tetris__backend_8c_a82bb30341bfa641bad1c2bd68c1428ae}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!next\_init\_T@{next\_init\_T}}
+\index{next\_init\_T@{next\_init\_T}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{next\_init\_T()}{next\_init\_T()}}
+{\footnotesize\ttfamily void next\+\_\+init\+\_\+T (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Инициализация \char`\"{}Следующей фигуры T\char`\"{} для последующего отображения в окне справа 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & Структура с матрицей в которую записываем фигуру \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_a08244559d472cebf011626cd0e343cc2}\label{tetris__backend_8c_a08244559d472cebf011626cd0e343cc2}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!next\_init\_Z@{next\_init\_Z}}
+\index{next\_init\_Z@{next\_init\_Z}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{next\_init\_Z()}{next\_init\_Z()}}
+{\footnotesize\ttfamily void next\+\_\+init\+\_\+Z (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Инициализация \char`\"{}Следующей фигуры Z\char`\"{} для последующего отображения в окне справа 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & Структура с матрицей в которую записываем фигуру \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_a199519666c5f4a8cc8e0779b3ef7214a}\label{tetris__backend_8c_a199519666c5f4a8cc8e0779b3ef7214a}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!next\_update@{next\_update}}
+\index{next\_update@{next\_update}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{next\_update()}{next\_update()}}
+{\footnotesize\ttfamily void next\+\_\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{board,  }\item[{\mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}{block}}}]{next\+Block }\end{DoxyParamCaption})}
+
+
+
+Инициализация \char`\"{}Следующей фигуры\char`\"{} для последующего отображения в окне справа 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & Структура в которую записываем фигуру \\
+\hline
+{\em next\+Block} & Какой блок запишем \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_a0f61e90bcf0578ee32cd304adae68885}\label{tetris__backend_8c_a0f61e90bcf0578ee32cd304adae68885}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!spawn\_block@{spawn\_block}}
+\index{spawn\_block@{spawn\_block}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{spawn\_block()}{spawn\_block()}}
+{\footnotesize\ttfamily int spawn\+\_\+block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} $\ast$}]{game\+Info,  }\item[{\mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}{block}}}]{block\+\_\+type,  }\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current }\end{DoxyParamCaption})}
+
+
+
+Проверка на возможность спавна новой фигуры и её спавн 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Info} & Указатель на структуру \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}} \\
+\hline
+{\em block\+\_\+type} & Какую фигуру хотим заспавнить \\
+\hline
+{\em current} & Координаты будущей фигуры \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_a60a94c566974419a1ed87218446df8a8}\label{tetris__backend_8c_a60a94c566974419a1ed87218446df8a8}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!tetramino\_init\_I@{tetramino\_init\_I}}
+\index{tetramino\_init\_I@{tetramino\_init\_I}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{tetramino\_init\_I()}{tetramino\_init\_I()}}
+{\footnotesize\ttfamily void tetramino\+\_\+init\+\_\+I (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current }\end{DoxyParamCaption})}
+
+
+
+Инициализация координат фигуры I. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Переменная с координатами фигуры. Сюда инициализировать фигуру \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_ad5dbb48546f46c461fe9ce5829a9c08d}\label{tetris__backend_8c_ad5dbb48546f46c461fe9ce5829a9c08d}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!tetramino\_init\_J@{tetramino\_init\_J}}
+\index{tetramino\_init\_J@{tetramino\_init\_J}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{tetramino\_init\_J()}{tetramino\_init\_J()}}
+{\footnotesize\ttfamily void tetramino\+\_\+init\+\_\+J (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current }\end{DoxyParamCaption})}
+
+
+
+Инициализация координат фигуры J. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Переменная с координатами фигуры. Сюда инициализировать фигуру \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_a565b3886dedb43d436187aaf5263551b}\label{tetris__backend_8c_a565b3886dedb43d436187aaf5263551b}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!tetramino\_init\_L@{tetramino\_init\_L}}
+\index{tetramino\_init\_L@{tetramino\_init\_L}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{tetramino\_init\_L()}{tetramino\_init\_L()}}
+{\footnotesize\ttfamily void tetramino\+\_\+init\+\_\+L (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current }\end{DoxyParamCaption})}
+
+
+
+Инициализация координат фигуры L. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Переменная с координатами фигуры. Сюда инициализировать фигуру \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_a62589297de9962365d77c00862ad94be}\label{tetris__backend_8c_a62589297de9962365d77c00862ad94be}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!tetramino\_init\_O@{tetramino\_init\_O}}
+\index{tetramino\_init\_O@{tetramino\_init\_O}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{tetramino\_init\_O()}{tetramino\_init\_O()}}
+{\footnotesize\ttfamily void tetramino\+\_\+init\+\_\+O (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current }\end{DoxyParamCaption})}
+
+
+
+Инициализация координат фигуры O. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Переменная с координатами фигуры. Сюда инициализировать фигуру \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_a27e5e475d0c6194f2753d17e5d366e68}\label{tetris__backend_8c_a27e5e475d0c6194f2753d17e5d366e68}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!tetramino\_init\_S@{tetramino\_init\_S}}
+\index{tetramino\_init\_S@{tetramino\_init\_S}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{tetramino\_init\_S()}{tetramino\_init\_S()}}
+{\footnotesize\ttfamily void tetramino\+\_\+init\+\_\+S (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current }\end{DoxyParamCaption})}
+
+
+
+Инициализация координат фигуры S. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Переменная с координатами фигуры. Сюда инициализировать фигуру \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_a99593737bfb8ebe9064b00157cffe4fc}\label{tetris__backend_8c_a99593737bfb8ebe9064b00157cffe4fc}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!tetramino\_init\_T@{tetramino\_init\_T}}
+\index{tetramino\_init\_T@{tetramino\_init\_T}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{tetramino\_init\_T()}{tetramino\_init\_T()}}
+{\footnotesize\ttfamily void tetramino\+\_\+init\+\_\+T (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current }\end{DoxyParamCaption})}
+
+
+
+Инициализация координат фигуры T. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Переменная с координатами фигуры. Сюда инициализировать фигуру \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetris__backend_8c_af1631c762c0245ada4bb117123ee4be8}\label{tetris__backend_8c_af1631c762c0245ada4bb117123ee4be8}} 
+\index{tetris\_backend.c@{tetris\_backend.c}!tetramino\_init\_Z@{tetramino\_init\_Z}}
+\index{tetramino\_init\_Z@{tetramino\_init\_Z}!tetris\_backend.c@{tetris\_backend.c}}
+\doxysubsubsection{\texorpdfstring{tetramino\_init\_Z()}{tetramino\_init\_Z()}}
+{\footnotesize\ttfamily void tetramino\+\_\+init\+\_\+Z (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTetramino}{Tetramino}} $\ast$}]{current }\end{DoxyParamCaption})}
+
+
+
+Инициализация координат фигуры Z. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Переменная с координатами фигуры. Сюда инициализировать фигуру \\
+\hline
+\end{DoxyParams}

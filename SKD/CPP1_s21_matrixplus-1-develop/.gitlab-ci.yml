@@ -1,0 +1,58 @@
+stages:
+  - style
+  - build
+  - test
+  - deploy
+
+style-job:
+  stage: style
+  tags:
+    - style
+  script:
+    - cd src/
+    - make format
+    - make cppcheck
+
+  after_script:
+  only:
+    - develop
+
+build-job:
+  stage: build
+  tags:
+    - build
+  script:
+    - cd src/
+    - make s21_matrix_oop.a
+  after_script:
+  artifacts:
+    paths:
+      - src/s21_matrix_oop.a
+    expire_in: 30 days
+  only:
+    - develop
+
+test-job:
+  stage: test
+  tags:
+    - test
+  script:
+    - cd src/
+    - make test > test.txt
+  after_script:
+  only:
+    - develop
+  allow_failure: false
+
+deploy-job:
+  stage: deploy
+  tags:
+    - deploy
+  when: manual
+  script:
+    - ls -l src/
+    - scp src/s21_matrix_oop.a matrix_plus@192.10.10.2:/home/matrix_plus/
+    - ssh matrix_plus@192.10.10.2 "sudo mv /home/matrix_plus/s21_matrix_oop.a /usr/local/bin/"
+  after_script:
+  only:
+    - develop

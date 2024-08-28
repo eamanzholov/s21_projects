@@ -1,0 +1,175 @@
+\hypertarget{objects_8h}{}\doxysection{brick\+\_\+game/objects.h File Reference}
+\label{objects_8h}\index{brick\_game/objects.h@{brick\_game/objects.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Include dependency graph for objects.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{objects_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{objects_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structTetramino}{Tetramino}}
+\begin{DoxyCompactList}\small\item\em Структура для координат фигуры, типа фигуры и текущего поворота \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structGameInfo__t}{Game\+Info\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Структура отвечающая за все основные элементы консоли \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}{block}} \{ \newline
+\mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165ad091b8e376f7cf432dc367e1eda65e85}{I}} = 0
+, \mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165a03605500b0c55f3d95874e8edfcf4e30}{J}}
+, \mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165aef31cc6fe9479955961311ee18ac205f}{L}}
+, \mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165af4b8b7698dfedf5562a7db2bdb07010a}{O}}
+, \newline
+\mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165af1ce01387d2348f8b858721a7db81670}{S}}
+, \mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165a21f40778b7db9343a6ca75ec2c41ccce}{T}}
+, \mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165aa70478ce277ffc322f8e1e3418e07355}{Z}}
+ \}
+\begin{DoxyCompactList}\small\item\em Нумерация фигур \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{objects_8h_addbd599f4555ee3b2039ee20613f5ecd}{rotate\+State}} \{ \mbox{\hyperlink{objects_8h_addbd599f4555ee3b2039ee20613f5ecdaa4500e61db092c2e1719b5d68b047ec3}{first}} = 0
+, \mbox{\hyperlink{objects_8h_addbd599f4555ee3b2039ee20613f5ecdaed5e1b554d8a8c57ad81b1e7d6278cc2}{second}}
+, \mbox{\hyperlink{objects_8h_addbd599f4555ee3b2039ee20613f5ecda084d514734ca9531c812b1d49f5695b8}{third}}
+, \mbox{\hyperlink{objects_8h_addbd599f4555ee3b2039ee20613f5ecda2fa414b1321ed60700ca25cb0b285038}{fourth}}
+ \}
+\begin{DoxyCompactList}\small\item\em Нумерация состояний вращения фигуры \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9}{User\+Action\+\_\+t}} \{ \newline
+\mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9abd5f9c956752ce4dc707b4624b3a36f7}{Start}}
+, \mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9adaba8aa0fcd8a87c25fec7d916c789e7}{Pause}}
+, \mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9aaf166713f3d14b30bee8f0ad5a09c4cb}{Terminate}}
+, \mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9a9d4d8b0b72fc2659da772d761a3c5ecb}{Left}}
+, \newline
+\mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9ad48f7af8c070184f3774c8e85854eb66}{Right}}
+, \mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9a57a7edcbc04d6175683383cad5c3e0a2}{Up}}
+, \mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9abcf8c79e9a5f5f9d606fb35645a0fb27}{Down}}
+, \mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9a3887649be5130f60dd3e7a6eb8e9f142}{Action}}
+ \}
+\begin{DoxyCompactList}\small\item\em Возможные кнопки консоли и их действия \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}\label{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}} 
+\index{objects.h@{objects.h}!block@{block}}
+\index{block@{block}!objects.h@{objects.h}}
+\doxysubsubsection{\texorpdfstring{block}{block}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165}{block}}}
+
+
+
+Нумерация фигур 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I@{I}!objects.h@{objects.h}}\index{objects.h@{objects.h}!I@{I}}}\mbox{\Hypertarget{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165ad091b8e376f7cf432dc367e1eda65e85}\label{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165ad091b8e376f7cf432dc367e1eda65e85}} 
+I&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{J@{J}!objects.h@{objects.h}}\index{objects.h@{objects.h}!J@{J}}}\mbox{\Hypertarget{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165a03605500b0c55f3d95874e8edfcf4e30}\label{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165a03605500b0c55f3d95874e8edfcf4e30}} 
+J&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L@{L}!objects.h@{objects.h}}\index{objects.h@{objects.h}!L@{L}}}\mbox{\Hypertarget{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165aef31cc6fe9479955961311ee18ac205f}\label{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165aef31cc6fe9479955961311ee18ac205f}} 
+L&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O@{O}!objects.h@{objects.h}}\index{objects.h@{objects.h}!O@{O}}}\mbox{\Hypertarget{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165af4b8b7698dfedf5562a7db2bdb07010a}\label{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165af4b8b7698dfedf5562a7db2bdb07010a}} 
+O&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S@{S}!objects.h@{objects.h}}\index{objects.h@{objects.h}!S@{S}}}\mbox{\Hypertarget{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165af1ce01387d2348f8b858721a7db81670}\label{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165af1ce01387d2348f8b858721a7db81670}} 
+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T@{T}!objects.h@{objects.h}}\index{objects.h@{objects.h}!T@{T}}}\mbox{\Hypertarget{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165a21f40778b7db9343a6ca75ec2c41ccce}\label{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165a21f40778b7db9343a6ca75ec2c41ccce}} 
+T&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Z@{Z}!objects.h@{objects.h}}\index{objects.h@{objects.h}!Z@{Z}}}\mbox{\Hypertarget{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165aa70478ce277ffc322f8e1e3418e07355}\label{objects_8h_a17afa58b2bc574dedcd1cc02e1fdf165aa70478ce277ffc322f8e1e3418e07355}} 
+Z&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{objects_8h_addbd599f4555ee3b2039ee20613f5ecd}\label{objects_8h_addbd599f4555ee3b2039ee20613f5ecd}} 
+\index{objects.h@{objects.h}!rotateState@{rotateState}}
+\index{rotateState@{rotateState}!objects.h@{objects.h}}
+\doxysubsubsection{\texorpdfstring{rotateState}{rotateState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{objects_8h_addbd599f4555ee3b2039ee20613f5ecd}{rotate\+State}}}
+
+
+
+Нумерация состояний вращения фигуры 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{first@{first}!objects.h@{objects.h}}\index{objects.h@{objects.h}!first@{first}}}\mbox{\Hypertarget{objects_8h_addbd599f4555ee3b2039ee20613f5ecdaa4500e61db092c2e1719b5d68b047ec3}\label{objects_8h_addbd599f4555ee3b2039ee20613f5ecdaa4500e61db092c2e1719b5d68b047ec3}} 
+first&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{second@{second}!objects.h@{objects.h}}\index{objects.h@{objects.h}!second@{second}}}\mbox{\Hypertarget{objects_8h_addbd599f4555ee3b2039ee20613f5ecdaed5e1b554d8a8c57ad81b1e7d6278cc2}\label{objects_8h_addbd599f4555ee3b2039ee20613f5ecdaed5e1b554d8a8c57ad81b1e7d6278cc2}} 
+second&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{third@{third}!objects.h@{objects.h}}\index{objects.h@{objects.h}!third@{third}}}\mbox{\Hypertarget{objects_8h_addbd599f4555ee3b2039ee20613f5ecda084d514734ca9531c812b1d49f5695b8}\label{objects_8h_addbd599f4555ee3b2039ee20613f5ecda084d514734ca9531c812b1d49f5695b8}} 
+third&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{fourth@{fourth}!objects.h@{objects.h}}\index{objects.h@{objects.h}!fourth@{fourth}}}\mbox{\Hypertarget{objects_8h_addbd599f4555ee3b2039ee20613f5ecda2fa414b1321ed60700ca25cb0b285038}\label{objects_8h_addbd599f4555ee3b2039ee20613f5ecda2fa414b1321ed60700ca25cb0b285038}} 
+fourth&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9}\label{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9}} 
+\index{objects.h@{objects.h}!UserAction\_t@{UserAction\_t}}
+\index{UserAction\_t@{UserAction\_t}!objects.h@{objects.h}}
+\doxysubsubsection{\texorpdfstring{UserAction\_t}{UserAction\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9}{User\+Action\+\_\+t}}}
+
+
+
+Возможные кнопки консоли и их действия 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Start@{Start}!objects.h@{objects.h}}\index{objects.h@{objects.h}!Start@{Start}}}\mbox{\Hypertarget{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9abd5f9c956752ce4dc707b4624b3a36f7}\label{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9abd5f9c956752ce4dc707b4624b3a36f7}} 
+Start&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Pause@{Pause}!objects.h@{objects.h}}\index{objects.h@{objects.h}!Pause@{Pause}}}\mbox{\Hypertarget{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9adaba8aa0fcd8a87c25fec7d916c789e7}\label{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9adaba8aa0fcd8a87c25fec7d916c789e7}} 
+Pause&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Terminate@{Terminate}!objects.h@{objects.h}}\index{objects.h@{objects.h}!Terminate@{Terminate}}}\mbox{\Hypertarget{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9aaf166713f3d14b30bee8f0ad5a09c4cb}\label{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9aaf166713f3d14b30bee8f0ad5a09c4cb}} 
+Terminate&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left@{Left}!objects.h@{objects.h}}\index{objects.h@{objects.h}!Left@{Left}}}\mbox{\Hypertarget{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9a9d4d8b0b72fc2659da772d761a3c5ecb}\label{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9a9d4d8b0b72fc2659da772d761a3c5ecb}} 
+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right@{Right}!objects.h@{objects.h}}\index{objects.h@{objects.h}!Right@{Right}}}\mbox{\Hypertarget{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9ad48f7af8c070184f3774c8e85854eb66}\label{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9ad48f7af8c070184f3774c8e85854eb66}} 
+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Up@{Up}!objects.h@{objects.h}}\index{objects.h@{objects.h}!Up@{Up}}}\mbox{\Hypertarget{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9a57a7edcbc04d6175683383cad5c3e0a2}\label{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9a57a7edcbc04d6175683383cad5c3e0a2}} 
+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Down@{Down}!objects.h@{objects.h}}\index{objects.h@{objects.h}!Down@{Down}}}\mbox{\Hypertarget{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9abcf8c79e9a5f5f9d606fb35645a0fb27}\label{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9abcf8c79e9a5f5f9d606fb35645a0fb27}} 
+Down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Action@{Action}!objects.h@{objects.h}}\index{objects.h@{objects.h}!Action@{Action}}}\mbox{\Hypertarget{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9a3887649be5130f60dd3e7a6eb8e9f142}\label{objects_8h_a7ba289d7b97db30e0b7041ca2cef75a9a3887649be5130f60dd3e7a6eb8e9f142}} 
+Action&\\
+\hline
+
+\end{DoxyEnumFields}

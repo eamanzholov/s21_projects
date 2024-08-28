@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  s21_matrix:
+    build: .
+    container_name: s21_matrix_container
+    volumes:
+      - .:/app
+    command: ["make", "test", "gcov_report_1"]
